@@ -33,7 +33,7 @@ resource "unifi_network" "vlan" {
 
 resource "unifi_wlan" "Butter_My_Biscuits" {
     name                    = "Butter My Bisciuts"
-    passphrase              = "V8Cfxy_TBWowYWDsKsqw" #make var. later
+    passphrase              = "password for wlan"
     security                = "wpapsk"
     fast_roaming_enabled    = true
     multicast_enhance       = true
@@ -51,7 +51,7 @@ resource "unifi_wlan" "Butter_My_Biscuits" {
 
 resource "unifi_wlan" "HIoT" {
     name                    = "HIoT"
-    passphrase              = "H@nL3yIoT!"
+    passphrase              = "password for wlan"
     security                = "wpapsk"
     fast_roaming_enabled    = true
     multicast_enhance       = true
@@ -74,5 +74,5 @@ resource "unifi_network" "wan" {
 
   wan_networkgroup = "WAN"
   wan_type         = "dhcp"
-  wan_ip           = "71.117.28.28"
+  wan_ip           = "public ip"
 }
