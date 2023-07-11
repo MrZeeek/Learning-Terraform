@@ -1,4 +1,4 @@
-#! bin/bash
+#! /bin/bash
 # install httpd
 yum update -y
 yum install -y httpd
