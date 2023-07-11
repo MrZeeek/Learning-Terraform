@@ -1,3 +1,5 @@
+# Creates aws security group named "allow_tls" with port 443 open for the cider 10.0.0.0/16"
+
 resource "aws_security_group" "LearningTerraformAllow_tls" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic"
